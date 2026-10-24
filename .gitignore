@@ -1,0 +1,18 @@
+# 敏感信息：真实 API Key，严禁入库
+.env
+
+# 运行时产物
+.server.log
+*.log
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 临时验收截图与工作区数据
+.tmpchk/
+.workbuddy/
+
+# 编辑器
+.vscode/
+.idea/

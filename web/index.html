@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>财务管理系统 · FIN SUITE</title>
+<link rel="stylesheet" href="./css/app.css?v=1.4.4">
+</head>
+<body>
+
+<!-- 登录页 -->
+<div id="login" class="login-wrap"></div>
+
+<!-- 应用主体 -->
+<div id="app" class="app" hidden>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">财</div>
+      <div>
+        <div class="brand-t">财务管理系统</div>
+        <div class="brand-s">FIN SUITE</div>
+      </div>
+    </div>
+    <div id="navBox"></div>
+    <div class="sidebar-foot" id="sideUser"></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb" id="crumb"></div>
+      <div class="top-right" id="topRight"></div>
+    </header>
+    <div class="content" id="view"></div>
+  </div>
+</div>
+
+<div id="modal" class="overlay"></div>
+
+<script type="module" src="./js/app.js?v=1.4.4"></script>
+<script>
+  /* 版本哨兵：入口 HTML 已更新但主模块仍是旧版（缓存）时，自动跳转带标记的地址强刷一次 */
+  setTimeout(function () {
+    if (window.__FIN_VER !== "1.4.4" && location.search.indexOf("nv=1") === -1) {
+      location.replace(location.pathname + "?nv=1" + location.hash);
+    }
+  }, 1500);
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# 财务管理系统运行依赖（Python 3.13+）
+# 安装：python -m pip install -r requirements.txt
+fastapi==0.143.3
+uvicorn==0.54.0
+psycopg2-binary==2.9.13
+pydantic==2.14.1
